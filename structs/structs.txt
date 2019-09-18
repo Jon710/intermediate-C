@@ -1,0 +1,6 @@
+a data structure where you can store groups of data types.
+
+student.name doesn't work for strings. 
+instead, you need to use strcpy.
+
+you can create as many students as you want with structs.
