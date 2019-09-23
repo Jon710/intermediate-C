@@ -1,0 +1,16 @@
+unsigned char x;           x a cada execução da sentença             valor de x
+x = 7;                         0 0 0 0 0 1 1 1                            7
+x = x << 1;                    0 0 0 0 1 1 1 0                           14
+x = x << 3;                    0 1 1 1 0 0 0 0                          112
+x = x << 2;                    1 1 0 0 0 0 0 0                          192 
+x = x >> 1;                    0 1 1 0 0 0 0 0                           96
+x = x >> 2;                    0 0 0 1 1 0 0 0                           24
+
+cada deslocamento à esquerda multiplica por 2. note que se perde informação após
+o x << 2 porque um bit foi deslocado para fora
+
+cada deslocamento à direita divide por 2. note que divisões subsequentes não 
+trazem de volta bits anteriormente perdidos.
+
+o operador de complemento a um ~ inverte o estado de cada bit da variavel
+especificada. ou seja, todos os 1s sao colocados em 0 e vice versa.
